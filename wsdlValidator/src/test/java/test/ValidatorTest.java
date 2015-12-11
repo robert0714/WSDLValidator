@@ -27,8 +27,8 @@ public class ValidatorTest {
 	protected void testMethos() throws MalformedURLException{
 		XMLGrammarPool xsdGrammarPool = new InlineSchemaModelGrammarPoolImpl();
 		XMLGrammarPool xmlGrammarPool = new XMLGrammarPoolImpl();
-//		org.eclipse.wst.wsdl.validation.internal.WSDLValidator validator = org.eclipse.wst.wsdl.validation.internal.eclipse.WSDLValidator.getInstance();
-		WSDLValidator validator = WSDLValidator.getInstance();
+		org.eclipse.wst.wsdl.validation.internal.WSDLValidator validator = org.eclipse.wst.wsdl.validation.internal.eclipse.WSDLValidator.getInstance();
+//		WSDLValidator validator = WSDLValidator.getInstance();
 
 		WSDLValidationConfiguration configuration = new WSDLValidationConfiguration();
 		configuration.setProperty(Constants.XMLSCHEMA_CACHE_ATTRIBUTE,
